@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Шиномонтаж на Нагорной · Ижевск</title>
+<meta name="description" content="Шиномонтаж в Ижевске, Нагорная улица, 48А: замена колёс, подкачка шин, ремонт проколов. Выберите услуги и согласуйте удобное время.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Шиномонтаж на Нагорной">
+<meta property="og:title" content="Шиномонтаж на Нагорной · Ижевск">
+<meta property="og:description" content="Замена колёс, подкачка шин и ремонт проколов. Нагорная улица, 48А.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hands.webp" fetchpriority="high">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2711%27 fill=%27none%27 stroke=%27%23e8920f%27 stroke-width=%276%27/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #eef0f3; --card: #ffffff; --ink: #1b222c; --soft: #556070; --line: #d5dae1;
+    --dark: #222b37; --dark-2: #2d3846; --on-dark: #f2f4f7; --on-dark-soft: #aab4c1;
+    --accent: #e8920f; --accent-hover: #f5a52a; --accent-ink: #1b1406;
+    --ok: #1f7a4d; --danger: #b3261e;
+    --r: 14px; --wrap: 1160px;
+    --font: "Manrope", "Segoe UI", system-ui, sans-serif;
+    --font-d: "Unbounded", "Manrope", system-ui, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.0625rem/1.55 var(--font); -webkit-text-size-adjust: 100%; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  h1, h2, h3 { font-family: var(--font-d); font-weight: 600; line-height: 1.12; margin: 0; letter-spacing: -.01em; }
+  p { margin: 0; }
+  .wrap { width: min(var(--wrap), 100% - 2rem); margin-inline: auto; }
+  :focus-visible { outline: 3px solid #1b5fd1; outline-offset: 2px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* кнопки */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 52px; padding: 0 1.4rem; border-radius: 999px;
+    font: 700 1rem var(--font); text-decoration: none; cursor: pointer; border: 2px solid transparent; transition: background-color .15s, border-color .15s, transform .1s; }
+  .btn:active { transform: translateY(1px); }
+  .btn--main { background: var(--accent); color: var(--accent-ink); }
+  .btn--main:hover { background: var(--accent-hover); }
+  .btn--line { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn--line:hover { background: var(--ink); color: #fff; }
+  .btn--dark-line { color: var(--on-dark); border-color: var(--on-dark-soft); background: transparent; }
+  .btn--dark-line:hover { background: var(--on-dark); color: var(--dark); }
+  .btn[disabled], .btn[aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
+  .btn svg { width: 1.2em; height: 1.2em; flex: none; }
+
+  /* шапка */
+  .top { position: sticky; top: 0; z-index: 20; background: var(--dark); color: var(--on-dark); }
+  .top__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 64px; }
+  .logo { display: inline-flex; align-items: center; gap: .55rem; font: 700 1rem var(--font-d); text-decoration: none; white-space: nowrap; }
+  .logo i { width: .95em; height: .95em; border-radius: 50%; border: .24em solid var(--accent); }
+  .top__nav { display: flex; align-items: center; gap: 1.25rem; }
+  .top__nav a:not(.btn) { text-decoration: none; font-weight: 600; font-size: .95rem; color: var(--on-dark-soft); }
+  .top__nav a:not(.btn):hover { color: #fff; }
+  .top__tel { color: var(--on-dark) !important; font-size: 1rem !important; }
+  .top .btn { min-height: 44px; padding: 0 1.1rem; font-size: .95rem; }
+
+  /* первый экран */
+  .hero { padding: clamp(1.5rem, 4vw, 3.5rem) 0 clamp(2rem, 5vw, 4rem); }
+  .hero__grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
+  .hero h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); }
+  .hero__lede { margin-top: 1rem; font-size: 1.15rem; color: var(--soft); max-width: 36em; }
+  .hero__fig { position: sticky; top: 88px; border-radius: var(--r); overflow: hidden; background: var(--dark); }
+  .hero__fig img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 60% 50%; }
+  .hero__fig figcaption { padding: .7rem 1rem; font-size: .85rem; color: var(--on-dark-soft); background: var(--dark); }
+
+  /* форма */
+  .form { margin-top: 1.5rem; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: clamp(1rem, 3vw, 1.6rem); box-shadow: 0 6px 20px rgb(27 34 44 / .06); }
+  .form fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+  .form legend { font: 600 1.2rem var(--font-d); padding: 0; margin-bottom: .8rem; }
+  .pick { display: grid; gap: .6rem; }
+  .pick label { display: flex; align-items: center; gap: .85rem; min-height: 56px; padding: .5rem 1rem; border: 2px solid var(--line); border-radius: 12px; cursor: pointer; font-weight: 700; background: #fff; transition: border-color .15s, background-color .15s; }
+  .pick label:hover { border-color: #9aa5b4; }
+  .pick input { appearance: none; -webkit-appearance: none; width: 26px; height: 26px; flex: none; margin: 0; border: 2px solid #8793a3; border-radius: 7px; background: #fff; display: grid; place-content: center; cursor: pointer; }
+  .pick input::after { content: ""; width: 14px; height: 8px; border-left: 3px solid var(--accent-ink); border-bottom: 3px solid var(--accent-ink); transform: rotate(-45deg) translate(1px, -1px); opacity: 0; }
+  .pick input:checked { background: var(--accent); border-color: var(--accent); }
+  .pick input:checked::after { opacity: 1; }
+  .pick label:has(input:checked) { border-color: var(--accent); background: #fff7ea; }
+  .pick label:has(input:focus-visible) { outline: 3px solid #1b5fd1; outline-offset: 2px; }
+  .summary { margin-top: .8rem; font-weight: 700; min-height: 1.6em; }
+  .summary b { color: #9a5b00; }
+  .fields { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin-top: 1rem; }
+  .field { display: grid; gap: .3rem; min-width: 0; }
+  .field--wide { grid-column: 1 / -1; }
+  .field span { font-size: .9rem; font-weight: 700; color: var(--soft); }
+  .field em { font-style: normal; font-weight: 500; }
+  .field input, .field select, .field textarea { width: 100%; min-height: 50px; padding: .7rem .85rem; border: 2px solid var(--line); border-radius: 10px; font: 500 1rem var(--font); color: var(--ink); background: #fff; }
+  .field textarea { min-height: 84px; resize: vertical; }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: #1b5fd1; outline: none; box-shadow: 0 0 0 3px rgb(27 95 209 / .2); }
+  .form__note { margin-top: .9rem; font-size: .9rem; color: var(--soft); }
+  .form__submit { margin-top: 1rem; width: 100%; }
+  .form__err { margin-top: .7rem; color: var(--danger); font-weight: 700; min-height: 1.4em; }
+  .contacts { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; margin-top: .8rem; }
+  .contacts .btn { width: 100%; padding: 0 .8rem; }
+
+  /* текст заявки */
+  .req { margin-top: 1rem; padding: 1rem; border: 2px dashed #9aa5b4; border-radius: 12px; background: #f8f9fb; }
+  .req[hidden], .max-help[hidden] { display: none; }
+  .req h3 { font: 700 1rem var(--font); margin-bottom: .5rem; }
+  .req textarea { width: 100%; min-height: 190px; padding: .7rem; border: 1px solid var(--line); border-radius: 8px; font: 500 .95rem/1.5 var(--font); background: #fff; color: var(--ink); resize: vertical; }
+  .req__row { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .7rem; }
+  .req__row .btn { min-height: 46px; font-size: .95rem; }
+  .req__status { margin-top: .6rem; font-weight: 700; min-height: 1.4em; }
+  .req__status.is-ok { color: var(--ok); }
+  .req__hint { margin-top: .4rem; font-size: .88rem; color: var(--soft); }
+  .max-help { margin-top: .8rem; padding: .8rem 1rem; border-radius: 10px; background: #fff3dc; border: 1px solid #f0cf94; font-size: .95rem; }
+
+  /* секции */
+  .sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+  .sec--white { background: #fff; }
+  .sec--dark { background: var(--dark); color: var(--on-dark); }
+  .sec h2 { font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+  .sec__lede { margin-top: .7rem; color: var(--soft); max-width: 40em; font-size: 1.1rem; }
+  .sec--dark .sec__lede { color: var(--on-dark-soft); }
+
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 1.8rem; }
+  .card { display: flex; flex-direction: column; gap: .8rem; background: var(--card); border: 2px solid var(--line); border-radius: var(--r); padding: 1.4rem; transition: border-color .15s; }
+  .sec--white .card { background: var(--bg); }
+  .card.is-on { border-color: var(--accent); }
+  .card__ico { width: 56px; height: 56px; border-radius: 14px; background: var(--dark); color: var(--accent); display: grid; place-items: center; }
+  .card__ico svg { width: 32px; height: 32px; }
+  .card h3 { font-size: 1.2rem; }
+  .card p { color: var(--soft); flex: 1; }
+  .card .btn { width: 100%; }
+  .card .btn[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  .price-note { margin-top: 1.4rem; font-weight: 700; }
+
+  .steps { counter-reset: s; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; margin: 1.8rem 0 0; padding: 0; list-style: none; }
+  .steps li { counter-increment: s; background: var(--dark-2); border-radius: var(--r); padding: 1.3rem; }
+  .steps li::before { content: counter(s); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font: 700 1.1rem var(--font-d); margin-bottom: .8rem; }
+  .steps b { display: block; font-size: 1.1rem; margin-bottom: .3rem; }
+  .steps span { color: var(--on-dark-soft); font-size: .98rem; }
+
+  .where { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+  .where dl { margin: 1.4rem 0 0; display: grid; gap: .9rem; }
+  .where dt { font-size: .85rem; font-weight: 700; color: var(--soft); text-transform: uppercase; letter-spacing: .06em; }
+  .where dd { margin: 0; font-size: 1.2rem; font-weight: 700; }
+  .where dd a { text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .where .btn { margin-top: 1.4rem; }
+  .where__box { background: var(--bg); border: 2px solid var(--line); border-radius: var(--r); padding: 1.6rem; }
+  .where__box p + p { margin-top: .7rem; }
+
+  .final__in { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+  .final .chosen { margin-top: 1rem; padding: 1rem 1.2rem; border-radius: 12px; background: var(--dark-2); }
+  .final .chosen ul { margin: .4rem 0 0; padding-left: 1.2rem; }
+  .final .chosen .none { color: var(--on-dark-soft); }
+  .final__btns { display: grid; gap: .7rem; margin-top: 1.2rem; max-width: 26rem; }
+  .final__btns .btn { width: 100%; }
+  .final .req { background: var(--dark-2); border-color: #5b6878; color: var(--on-dark); }
+  .final .req textarea { background: #fff; }
+  .final .req__hint { color: var(--on-dark-soft); }
+  .final .req__status.is-ok { color: #6fdc9f; }
+  .final .max-help { color: var(--ink); }
+  .tel-big { display: inline-block; margin-top: 1rem; font: 600 clamp(1.5rem, 3.6vw, 2.2rem) var(--font-d); text-decoration: none; }
+  .tel-big:hover { color: var(--accent); }
+
+  .foot { padding: 1.4rem 0 6rem; font-size: .88rem; color: var(--soft); background: var(--bg); }
+  .foot .wrap { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; justify-content: space-between; }
+
+  /* закреплённая панель на телефоне */
+  .dock { display: none; }
+
+  @media (max-width: 900px) {
+    .hero__grid, .where, .final__in { grid-template-columns: 1fr; }
+    .hero__fig { position: static; order: 2; }
+    .hero__fig img { aspect-ratio: 16 / 10; }
+    .cards { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 700px) {
+    .top__nav a:not(.btn) { display: none; }
+    .top .btn { display: none; }
+    .top__in { min-height: 56px; }
+    html { scroll-padding-top: 64px; }
+    .hero { padding-top: 1.2rem; }
+    .fields { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .dock { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; position: fixed; inset: auto 0 0 0; z-index: 30; padding: .6rem 1rem calc(.6rem + env(safe-area-inset-bottom)); background: var(--dark); box-shadow: 0 -4px 16px rgb(0 0 0 / .25); }
+    .dock .btn { min-height: 50px; padding: 0 .6rem; }
+  }
+  @media (max-width: 420px) { .contacts { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#top"><i aria-hidden="true"></i>Шиномонтаж на Нагорной</a>
+    <nav class="top__nav" aria-label="Основная навигация">
+      <a href="#uslugi">Услуги</a>
+      <a href="#kak">Как записаться</a>
+      <a href="#adres">Адрес</a>
+      <a class="top__tel" href="tel:+79090511666">+7 (909) 051-16-66</a>
+      <a class="btn btn--main" href="#zapis">Записаться</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1. Первый экран -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero__grid">
+      <div>
+        <h1 id="h1">Шиномонтаж на Нагорной</h1>
+        <p class="hero__lede">Замена колёс, подкачка шин и ремонт проколов. Выберите нужные услуги и согласуйте удобное время.</p>
+
+        <form class="form" id="zapis" novalidate aria-label="Заявка на шиномонтаж">
+          <fieldset>
+            <legend>Что нужно сделать?</legend>
+            <div class="pick" id="pick">
+              <label><input type="checkbox" name="service" value="Замена колёс"> Замена колёс</label>
+              <label><input type="checkbox" name="service" value="Подкачка шин"> Подкачка шин</label>
+              <label><input type="checkbox" name="service" value="Ремонт прокола"> Ремонт прокола</label>
+            </div>
+            <p class="summary" id="summary" aria-live="polite">Выбрано услуг: 0</p>
+          </fieldset>
+
+          <div class="fields">
+            <label class="field"><span>Имя <em>(необязательно)</em></span><input type="text" id="f-name" name="name" autocomplete="given-name"></label>
+            <label class="field"><span>Желаемая дата</span><input type="date" id="f-date" name="date"></label>
+            <label class="field field--wide"><span>Удобное время</span>
+              <select id="f-time" name="time">
+                <option value="">Не важно</option>
+                <option>Утром</option>
+                <option>Днём</option>
+                <option>Вечером</option>
+                <option>Укажу в комментарии</option>
+              </select>
+            </label>
+            <label class="field field--wide"><span>Комментарий <em>(необязательно)</em></span><textarea id="f-comment" name="comment" placeholder="Например: размер колёс, марка машины"></textarea></label>
+          </div>
+          <p class="form__note">Дата и время – ваши пожелания. Запись подтверждает мастер.</p>
+
+          <button class="btn btn--main form__submit" type="submit" id="submit">Записаться на шиномонтаж</button>
+          <p class="form__err" id="err" role="alert"></p>
+
+          <div class="req" id="req" hidden>
+            <h3>Текст заявки готов</h3>
+            <textarea id="req-text" readonly aria-label="Текст заявки"></textarea>
+            <div class="req__row">
+              <button class="btn btn--line" type="button" data-copy>Скопировать заявку</button>
+              <button class="btn btn--main" type="button" data-max>Скопировать и открыть MAX</button>
+              <a class="btn btn--line" href="tel:+79090511666">Позвонить</a>
+            </div>
+            <p class="req__status" data-status role="status"></p>
+            <p class="req__hint">Заявка не отправляется сама: отправьте её в MAX или назовите по телефону. Запись подтверждает мастер.</p>
+          </div>
+          <div class="max-help" data-maxhelp hidden>
+            Ссылка на MAX мастерской пока не подключена. Скопируйте заявку и позвоните по номеру +7 (909) 051-16-66, мастер подскажет стоимость и время.
+          </div>
+
+          <div class="contacts">
+            <button class="btn btn--line" type="button" data-maxbtn><svg aria-hidden="true"><use href="#i-chat"/></svg>Написать в MAX</button>
+            <a class="btn btn--line" href="tel:+79090511666"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+          </div>
+        </form>
+      </div>
+
+      <figure class="hero__fig">
+        <img src="assets/hands.webp" alt="Мастер надевает шину на диск на шиномонтажном станке" width="1600" height="900" fetchpriority="high">
+        <figcaption>Иллюстрация. Это не снимок мастерской на Нагорной.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. Услуги -->
+  <section class="sec sec--white" id="uslugi" aria-labelledby="h-uslugi">
+    <div class="wrap">
+      <h2 id="h-uslugi">Наши услуги</h2>
+      <p class="sec__lede">Отметьте то, что нужно: услуги попадут в заявку вверху страницы.</p>
+      <div class="cards" id="cards">
+        <article class="card" data-card="Замена колёс">
+          <div class="card__ico" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="16" r="3.5" fill="currentColor"/><path d="M16 4v8M16 20v8M4 16h8M20 16h8" stroke="currentColor" stroke-width="2.5"/></svg></div>
+          <h3>Замена колёс</h3>
+          <p>Снимут старые колёса и поставят нужные. Подходит для сезонной смены шин.</p>
+          <button class="btn btn--main" type="button" data-pick="Замена колёс" aria-pressed="false">Выбрать услугу</button>
+        </article>
+        <article class="card" data-card="Подкачка шин">
+          <div class="card__ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 24a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M16 24l5-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="24" r="2.2" fill="currentColor"/></svg></div>
+          <h3>Подкачка шин</h3>
+          <p>Можно заехать просто подкачать колёса, не меняя шины.</p>
+          <button class="btn btn--main" type="button" data-pick="Подкачка шин" aria-pressed="false">Выбрать услугу</button>
+        </article>
+        <article class="card" data-card="Ремонт прокола">
+          <div class="card__ico" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="3"/><path d="M10 22L22 10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="22" cy="10" r="2.4" fill="currentColor"/></svg></div>
+          <h3>Ремонт прокола</h3>
+          <p>Помогут подобрать ремкомплект и устранить прокол колеса.</p>
+          <button class="btn btn--main" type="button" data-pick="Ремонт прокола" aria-pressed="false">Выбрать услугу</button>
+        </article>
+      </div>
+      <p class="price-note">Стоимость уточним перед работой – позвоните или напишите нам.</p>
+    </div>
+  </section>
+
+  <!-- 3. Как записаться -->
+  <section class="sec sec--dark" id="kak" aria-labelledby="h-kak">
+    <div class="wrap">
+      <h2 id="h-kak">Как записаться</h2>
+      <ol class="steps">
+        <li><b>Выберите услуги</b><span>Отметьте нужное в форме вверху страницы.</span></li>
+        <li><b>Свяжитесь с нами</b><span>Отправьте заявку в MAX или позвоните.</span></li>
+        <li><b>Согласуйте время</b><span>Мастер подтвердит запись и назовёт стоимость.</span></li>
+        <li><b>Приезжайте</b><span>Нагорная улица, 48А.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. Адрес -->
+  <section class="sec sec--white" id="adres" aria-labelledby="h-adres">
+    <div class="wrap where">
+      <div>
+        <h2 id="h-adres">Адрес и как добраться</h2>
+        <dl>
+          <div><dt>Адрес</dt><dd>Ижевск, Нагорная улица, 48А</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79090511666">+7 (909) 051-16-66</a></dd></div>
+          <div><dt>Часы работы</dt><dd>Уточняйте по телефону</dd></div>
+        </dl>
+        <a class="btn btn--main" href="https://yandex.ru/maps/org/shinomontazh/81301713494/" target="_blank" rel="noopener">Открыть на Яндекс Картах<span class="sr"> (откроется в новой вкладке)</span></a>
+      </div>
+      <div class="where__box">
+        <p><b>Ориентир:</b> остановка «Нагорная улица» в 80 метрах, по данным Яндекс Карт.</p>
+        <p>Маршрут и фотографии места можно посмотреть на карточке в Яндекс Картах.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Заключительный блок -->
+  <section class="sec sec--dark final" id="final" aria-labelledby="h-final">
+    <div class="wrap final__in">
+      <div>
+        <h2 id="h-final">Запишитесь на шиномонтаж</h2>
+        <div class="chosen" aria-live="polite">
+          <b>Выбранные услуги</b>
+          <div id="chosen"><p class="none">Пока ничего не выбрано.</p></div>
+        </div>
+        <div class="final__btns">
+          <a class="btn btn--main" href="#zapis">Выбрать услуги и записаться</a>
+          <button class="btn btn--dark-line" type="button" data-copy-final>Скопировать заявку</button>
+          <button class="btn btn--dark-line" type="button" data-maxbtn><svg aria-hidden="true"><use href="#i-chat"/></svg>Написать в MAX</button>
+          <a class="btn btn--dark-line" href="tel:+79090511666"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+        </div>
+        <p class="req__status" data-status-final role="status"></p>
+        <div class="max-help" data-maxhelp-final hidden>
+          Ссылка на MAX мастерской пока не подключена. Скопируйте заявку и позвоните по номеру +7 (909) 051-16-66.
+        </div>
+      </div>
+      <div>
+        <a class="tel-big" href="tel:+79090511666">+7 (909) 051-16-66</a>
+        <p class="sec__lede">Ижевск, Нагорная улица, 48А. Стоимость уточним перед работой.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Шиномонтаж на Нагорной · Ижевск</span>
+    <span>Картинки на сайте – иллюстрации, не снимки этой мастерской.</span>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a class="btn btn--main" href="#zapis">Записаться</a>
+  <a class="btn btn--dark-line" href="tel:+79090511666">Позвонить</a>
+</div>
+
+<script>
+(function () {
+  // Ссылка на чат MAX мастерской. Вставьте сюда настоящую ссылку от владельца, например 'https://max.ru/...'.
+  // Пока строка пустая, кнопки MAX не открывают чат, а показывают подсказку позвонить.
+  var MAX_CHAT_URL = '';
+  var PHONE_TEXT = '+7 (909) 051-16-66';
+
+  var boxes = [].slice.call(document.querySelectorAll('#pick input'));
+  var summary = document.getElementById('summary');
+  var chosen = document.getElementById('chosen');
+  var err = document.getElementById('err');
+  var req = document.getElementById('req');
+  var reqText = document.getElementById('req-text');
+  var form = document.getElementById('zapis');
+  var f = { name: document.getElementById('f-name'), date: document.getElementById('f-date'), time: document.getElementById('f-time'), comment: document.getElementById('f-comment') };
+
+  var d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+  f.date.min = d.toISOString().slice(0, 10);
+
+  function selected() { return boxes.filter(function (b) { return b.checked; }).map(function (b) { return b.value; }); }
+  function fmtDate(v) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v || ''); return m ? m[3] + '.' + m[2] + '.' + m[1] : ''; }
+
+  function buildText() {
+    var s = selected(), t = ['Здравствуйте! Хочу записаться на шиномонтаж.'];
+    if (f.name.value.trim()) t.push('Меня зовут ' + f.name.value.trim() + '.');
+    t.push('Услуги:');
+    s.forEach(function (x) { t.push('— ' + x); });
+    t.push('Желаемая дата: ' + (fmtDate(f.date.value) || 'не важно'));
+    t.push('Удобное время: ' + (f.time.value || 'не важно'));
+    if (f.comment.value.trim()) t.push('Комментарий: ' + f.comment.value.trim());
+    t.push('Подскажите, пожалуйста, стоимость и возможность записи.');
+    return t.join('\n');
+  }
+
+  function render() {
+    var s = selected();
+    summary.innerHTML = 'Выбрано услуг: <b>' + s.length + '</b>';
+    chosen.innerHTML = s.length ? '<ul>' + s.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>' : '<p class="none">Пока ничего не выбрано.</p>';
+    [].forEach.call(document.querySelectorAll('[data-pick]'), function (btn) {
+      var on = s.indexOf(btn.getAttribute('data-pick')) > -1;
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.textContent = on ? 'Выбрано ✓ (убрать)' : 'Выбрать услугу';
+      btn.closest('.card').classList.toggle('is-on', on);
+    });
+    if (s.length) err.textContent = '';
+    if (!req.hidden) reqText.value = buildText();
+  }
+
+  boxes.forEach(function (b) { b.addEventListener('change', render); });
+  [f.name, f.date, f.time, f.comment].forEach(function (el) { el.addEventListener('input', function () { if (!req.hidden) reqText.value = buildText(); }); });
+
+  // карточки услуг -> форма вверху
+  [].forEach.call(document.querySelectorAll('[data-pick]'), function (btn) {
+    btn.addEventListener('click', function () {
+      var v = btn.getAttribute('data-pick');
+      boxes.forEach(function (b) { if (b.value === v) b.checked = !b.checked; });
+      render();
+      if (boxes.some(function (b) { return b.value === v && b.checked; })) {
+        form.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+        var first = boxes.filter(function (b) { return b.value === v; })[0]; if (first) first.focus({ preventScroll: true });
+      }
+    });
+  });
+
+  function copy(text, statusEls) {
+    function ok() { statusEls.forEach(function (e) { e.textContent = 'Заявка скопирована. Вставьте её в сообщение.'; e.className = e.className.replace(' is-ok', '') + ' is-ok'; }); return true; }
+    function fail() { statusEls.forEach(function (e) { e.textContent = 'Не удалось скопировать автоматически. Выделите текст заявки и скопируйте вручную.'; e.className = e.className.replace(' is-ok', ''); }); return false; }
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text).then(ok, fallback);
+    return Promise.resolve(fallback());
+    function fallback() {
+      try { var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); var done = document.execCommand('copy'); document.body.removeChild(ta); return done ? ok() : fail(); } catch (e) { return fail(); }
+    }
+  }
+
+  function needServices() {
+    if (selected().length) return false;
+    err.textContent = 'Отметьте хотя бы одну услугу.';
+    document.querySelector('#pick input').focus();
+    return true;
+  }
+
+  function showReq() { reqText.value = buildText(); req.hidden = false; }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (needServices()) return;
+    showReq();
+    req.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    var st = req.querySelector('[data-status]'); st.textContent = ''; st.className = 'req__status';
+  });
+
+  req.querySelector('[data-copy]').addEventListener('click', function () { copy(reqText.value, [req.querySelector('[data-status]')]); });
+
+  function openMax(statusEl, helpEl) {
+    if (!selected().length) { err.textContent = 'Отметьте хотя бы одну услугу.'; form.scrollIntoView({ block: 'start' }); document.querySelector('#pick input').focus({ preventScroll: true }); return; }
+    var text = buildText();
+    if (!MAX_CHAT_URL) { helpEl.hidden = false; copy(text, [statusEl]); return; }
+    helpEl.hidden = true;
+    copy(text, [statusEl]).then(function () { window.open(MAX_CHAT_URL, '_blank', 'noopener'); });
+  }
+
+  // кнопка внутри блока заявки
+  req.querySelector('[data-max]').addEventListener('click', function () {
+    var h = document.querySelector('[data-maxhelp]');
+    if (!MAX_CHAT_URL) { h.hidden = false; copy(reqText.value, [req.querySelector('[data-status]')]); return; }
+    h.hidden = true;
+    copy(reqText.value, [req.querySelector('[data-status]')]).then(function () { window.open(MAX_CHAT_URL, '_blank', 'noopener'); });
+  });
+  // кнопки «Написать в MAX»: первая в форме, вторая в финале
+  var maxBtns = document.querySelectorAll('[data-maxbtn]');
+  maxBtns[0].addEventListener('click', function () {
+    if (needServices()) return;
+    showReq();
+    openMax(req.querySelector('[data-status]'), document.querySelector('[data-maxhelp]'));
+  });
+  maxBtns[1].addEventListener('click', function () {
+    openMax(document.querySelector('[data-status-final]'), document.querySelector('[data-maxhelp-final]'));
+  });
+  document.querySelector('[data-copy-final]').addEventListener('click', function () {
+    var st = document.querySelector('[data-status-final]');
+    if (!selected().length) { st.textContent = 'Сначала отметьте услуги в форме.'; st.className = 'req__status'; return; }
+    copy(buildText(), [st]);
+  });
+
+  if (!MAX_CHAT_URL) {
+    [].forEach.call(document.querySelectorAll('[data-max]'), function (b) { b.textContent = 'Скопировать для MAX'; });
+  }
+  render();
+})();
+</script>
+</body>
+</html>
